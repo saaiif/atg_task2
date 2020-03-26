@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saif Task 2</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="index1.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <button class="modal-btn" data-modal-target=".modal">Open Ticket</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <button data-close-button class="close-button">&times;</button>
+            <div class="title">Event Type</div>
+
+        </div>
+        <div class="modal-body">
+            <p>Paid-event or free-event?</p>
+        </div>
+        <div class="events">
+            <div class="paid-event">
+                <div class="cost-items">
+                    <img src="./assets/paidevent1.png" />
+                    <h4>PAID</h4>
+                </div>
+                <div class="checked" id="radio">
+                    <input class="checked" type="radio" id="ticket" name="paid">
+                </div>
+            </div>
+            <div class="paid-event">
+                <div class="cost-items">
+                    <img src="./assets/freeevent.png" />
+                    <h4>FREE</h4>
+                </div>
+                <div class="checkedPlus" id="radio">
+                    <input class="checked" type="radio" id="free-ticket" name="free">
+                </div>
+            </div>
+        </div>
+        <div class="next">
+            <a href="next.html"><button class="next-btn enableBtn" data-modal-target=".modal">Next<span><svg width="16"
+                            height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="white" />
+                        </svg>
+                    </span></button></a>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script type="module" src="index1.js"></script>
+</body>
+
+</html>

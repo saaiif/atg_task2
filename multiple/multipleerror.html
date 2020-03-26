@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saif Task 2</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='multipletickets2.css' rel="stylesheet">
+
+</head>
+
+<body>
+    <button class="modal-btn" data-modal-target=".modal" style="background-color: #16B867;">Multiple Tickets</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="left-icon">
+                <a href="../price.html"><button data-close-button class="back-button"><svg width="14" height="15"
+                            viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.6666 9.66658H5.43992L12.8933 2.21325L10.9999 0.333252L0.333252 10.9999L10.9999 21.6666L12.8799 19.7866L5.43992 12.3333H21.6666V9.66658Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </a>
+                <div class="title">
+                    <h3>Multiple Tickets</h3>
+                </div>
+            </div>
+            <button class="cat" onclick="document.getElementById('popup').style.display='block'">&#43;
+                Category</button>
+        </div>
+
+        <div id="container">
+            <div class="card">
+                <div class="count">
+                    <h3>1.</h3><span class="icon"><i class="fa fa-caret-down icon"></i></span>
+                </div>
+                <div class="details" onclick="foo(event)">
+                    <section class="main">
+                        <div class="cat-type">
+                            <h4>Category?</h4>
+                            <input type="text" placeholder="Example: Entry, food, or parking etc.">
+                        </div>
+                        <div class="text-area">
+                            <h4>Description</h4>
+                            <textarea cols="52" rows="3" placeholder="Description"></textarea>
+                        </div>
+
+                        <div class="ticket-counter ">
+                            <h4>Ticket price for this category?</h4>
+                            <select>
+                                <option value="Rupees">&#8377;</option>
+                            </select>
+                            <input type="number" placeholder="Price per ticket">
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        <div id="popup">
+            <div id="container">
+                <div class="card">
+                    <div class="count">
+                        <h3>2.</h3><span class="icon"><i class="fa fa-caret-down icon"></i></span>
+                    </div>
+                    <div class="details" onclick="foo(event)">
+                        <section class="main">
+                            <div class="add">
+                                <div class="inline">
+                                    <h4>Category?</h4>
+                                    <input type="text" placeholder="Example: Entry, food, or parking etc.">
+                                </div>
+                                <span class="delete"
+                                    onclick="document.getElementById('popup').style.display='none'"><svg width="10"
+                                        height="10" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 9V11H15V9H5ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p>Remove</p>
+                                </span>
+                            </div>
+                            <div class="text-area">
+                                <h4>Description</h4>
+                                <textarea cols="52" rows="3" placeholder="Description"></textarea>
+                            </div>
+
+                            <div class="ticket-counter ">
+                                <h4>Ticket price for this category?</h4>
+                                <select>
+                                    <option value="Rupees">&#8377;</option>
+                                </select>
+                                <input type="number" placeholder="Price per ticket">
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="popup3">
+            <div id="container">
+                <div class="card">
+                    <div class="count">
+                        <h3>3.</h3><span class="icon"><i class="fa fa-caret-down icon"></i></span>
+                    </div>
+                    <div class="border"></div>
+                    <div class="details" onclick="foo(event)">
+                        <section class="main">
+                            <div class="add">
+                                <div class="inline">
+                                    <h4>Category?</h4>
+                                    <input type="text" placeholder="Example: Entry, food, or parking etc.">
+                                </div>
+                                <span class="delete"
+                                    onclick="document.getElementById('popup').style.display='none'"><svg width="10"
+                                        height="10" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 9V11H15V9H5ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
+                                            fill="black" />
+                                    </svg>
+                                    <p>Remove</p>
+                                </span>
+                            </div>
+                            <div class="text-area">
+                                <h4>Description</h4>
+                                <textarea cols="52" rows="3" placeholder="Description"></textarea>
+                            </div>
+
+                            <div class="ticket-counter success">
+                                <h4>Ticket price for this category?</h4>
+
+                                <select>
+                                    <option value="Rupees">&#8377;</option>
+                                </select>
+                                <input type="number" placeholder="Price per ticket" id="number">
+
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="next">
+            <h4>Total Cost: &#8377;0</h4>
+            <button class="next-btn" data-modal-target=".modal" style="background-color: #16B867;">Done 👌</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <script type="module" src="../index.js"></script>
+</body>
+
+</html>

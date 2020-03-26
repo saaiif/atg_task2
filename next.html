@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saif Task 2</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <button class="modal-btn" data-modal-target=".modal">Next</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <button data-close-button class="close-button">&times;</button>
+            <div class="title">Paid Event</div>
+
+        </div>
+        <div class="modal-body">
+            <p>Single-cost event or multiple-cost event?</p>
+            <div class="content">
+                <p>This is a Tooltip, How may i help you?</p><span class="tool-icon"><svg width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.8333 6.16659H13.1666V8.49992H10.8333V6.16659ZM10.8333 10.8333H13.1666V17.8333H10.8333V10.8333ZM11.9999 0.333252C5.55992 0.333252 0.333252 5.55992 0.333252 11.9999C0.333252 18.4399 5.55992 23.6666 11.9999 23.6666C18.4399 23.6666 23.6666 18.4399 23.6666 11.9999C23.6666 5.55992 18.4399 0.333252 11.9999 0.333252ZM11.9999 21.3333C6.85492 21.3333 2.66659 17.1449 2.66659 11.9999C2.66659 6.85492 6.85492 2.66659 11.9999 2.66659C17.1449 2.66659 21.3333 6.85492 21.3333 11.9999C21.3333 17.1449 17.1449 21.3333 11.9999 21.3333Z"
+                            fill="black" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="events">
+            <div class="paid-event">
+                <div class="cost-items">
+                    <img src="./assets/img1.png" />
+                    <h4>Single-Cost</h4>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="ticket" name="paid">
+                    <label for="ticket"></label>
+                </div>
+            </div>
+            <div class="paid-event">
+                <div class="cost-items">
+                    <img src="./assets/img2.png" />
+                    <h4>Multiple-Cost</h4>
+                </div>
+                <div id="radio">
+                    <input type="radio" id="ticket" name="paid">
+                </div>
+            </div>
+        </div>
+        <div class="next">
+            <a href="price.html"><button class="next-btn" data-modal-target=".modal"
+                    style="background-color: blue;">Next<span><svg width="16" height="8" viewBox="0 0 16 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="white" />
+                        </svg>
+                    </span></button></a>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

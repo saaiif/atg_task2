@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saif Task 2</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <button class="modal-btn" data-modal-target=".modal" style="background-color: #16B867;">Pricing</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <a href="next.html"><button data-close-button class="back-button"><svg width="14" height="15"
+                        viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.6666 9.66658H5.43992L12.8933 2.21325L10.9999 0.333252L0.333252 10.9999L10.9999 21.6666L12.8799 19.7866L5.43992 12.3333H21.6666V9.66658Z"
+                            fill="black" />
+                    </svg>
+                </button></a>
+            <div class="title">Price & Availability</div>
+
+        </div>
+        <div class="ticket-counter ">
+            <h4>Price of ticket?</h4>
+            <select>
+                <option value="Rupees">&#8377;</option>
+            </select>
+            <input type="number" placeholder="Price per ticket">
+        </div>
+
+        <div class="availabity">
+            <h4>Availability</h4>
+            <div class="radio-items radio-area">
+                <input type="radio" id="ritema" name="ritem" value="ropt1">
+                <label for="ritema">Online</label>
+            </div>
+
+            <div class="radio-items radio-area">
+                <input type="radio" id="ritemb" name="ritem" value="ropt2">
+                <label for="ritemb">Offline</label>
+            </div>
+        </div>
+
+        <div class="next">
+            <a href="./multiple/multipletickets.html"><button class="next-btn" data-modal-target=".modal"
+                    style="background-color: #16B867;">Done 👌</button>
+            </a>
+
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
