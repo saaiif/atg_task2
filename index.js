@@ -102,7 +102,7 @@ card.map((item) => {
 			x[0].classList.remove('show');
 		}
 		item.children[1].classList.add('show');
-		touched = false;
+		touched = true;
 	};
 });
 
