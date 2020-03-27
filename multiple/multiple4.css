@@ -6,7 +6,6 @@
 
 body {
 	height: 120%;
-	overflow-y: scroll;
 }
 .modal-btn {
 	background-color: blue;
@@ -37,7 +36,7 @@ body {
 	background-color: #ffffff !important;
 	opacity: 1 !important;
 	width: 768px;
-	height: 745px;
+	height: 730px;
 	max-width: 1000px;
 	z-index: 1 !important;
 	box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.12);
@@ -169,9 +168,11 @@ body {
 	outline: none;
 	margin-left: -4px;
 	padding: 5px 15px;
+	font-weight: 500;
+}
+.ticket-counter input::placeholder {
 	opacity: 0.5;
 }
-
 .count {
 	display: flex;
 	justify-content: space-between;
@@ -225,12 +226,16 @@ body {
 	height: 50px;
 	border: 0;
 	outline: none;
-	opacity: 0.5;
+
 	padding: 10px;
 	font-weight: bold !important;
 	text-transform: capitalize;
 	font-size: 14px;
 }
+.cat-type input[type=text]::placeholder {
+	opacity: 0.5;
+}
+
 .add input[type=text] {
 	background: #f7f7f7;
 	border-radius: 8px;
@@ -253,13 +258,16 @@ body {
 	border-radius: 8px;
 	border: 0;
 	outline: none;
-	opacity: 0.5;
+
 	padding: 10px;
 	resize: none;
 	font-weight: bold !important;
 	text-transform: capitalize;
 	font-size: 16px;
 	color: #000;
+}
+.text-area textarea::placeholder {
+	opacity: 0.5;
 }
 #container {
 	background: transparent;
@@ -284,6 +292,7 @@ body {
 }
 .show {
 	height: 400px;
+	z-index: -1;
 }
 #popup {
 	display: none;
@@ -304,4 +313,26 @@ body {
 	display: flex;
 	color: #000000;
 	font-size: 14px;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #ccc;
+	display: block;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #fcf7f7;
+	border-radius: 8px;
+	max-height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #ccc;
 }

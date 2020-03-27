@@ -168,11 +168,12 @@ body {
 	outline: none;
 	margin-left: -4px;
 	padding: 5px 15px;
-	opacity: 0.5;
+	opacity: 1;
 }
 
-.form-control input::placeholder{
+.form-control input::placeholder {
 	color: red;
+	opacity: 1;
 }
 .form-control.success input {
 	border-color: rgb(13, 255, 13) !important;
@@ -234,11 +235,15 @@ body {
 	height: 50px;
 	border: 0;
 	outline: none;
-	opacity: 0.5;
+
 	padding: 10px;
 	font-weight: bold !important;
 	text-transform: capitalize;
 	font-size: 14px;
+}
+
+.cat-type input[type=text]::placeholder {
+	opacity: 0.5;
 }
 .add input[type=text] {
 	background: #f7f7f7;
@@ -262,7 +267,7 @@ body {
 	border-radius: 8px;
 	border: 0;
 	outline: none;
-	opacity: 0.5;
+
 	padding: 10px;
 	resize: none;
 	font-weight: bold !important;
@@ -270,6 +275,10 @@ body {
 	font-size: 16px;
 	color: #000;
 }
+.text-area textarea::placeholder {
+	opacity: 0.5;
+}
+
 #container {
 	background: transparent;
 	display: flex;

@@ -168,9 +168,13 @@ body {
 	outline: none;
 	margin-left: -4px;
 	padding: 5px 15px;
-	opacity: 0.5;
+	color: black;
+	font-weight: 500;
 }
 
+.ticket-counter input::placeholder {
+	opacity: 0.5;
+}
 .count {
 	display: flex;
 	justify-content: space-between;
@@ -221,12 +225,16 @@ body {
 	height: 50px;
 	border: 0;
 	outline: none;
-	opacity: 0.5;
 	padding: 10px;
 	font-weight: bold !important;
 	text-transform: capitalize;
 	font-size: 14px;
+	color: #000;
 }
+.cat-type input[type=text]::placeholder {
+	opacity: 0.5;
+}
+
 .text-area {
 	margin-left: 20px;
 }
@@ -236,11 +244,13 @@ body {
 	border-radius: 8px;
 	border: 0;
 	outline: none;
-	opacity: 0.5;
 	padding: 10px;
 	resize: none;
-	font-weight: bold !important;
+	font-weight: 600;
 	text-transform: capitalize;
 	font-size: 16px;
 	color: #000;
+}
+.text-area textarea::placeholder {
+	opacity: 0.5;
 }
